@@ -20,7 +20,7 @@ public class BalloonMaker : MonoBehaviour
         timer -= Time.deltaTime;
         if(timer < 0 && gameControllerScript.timer > 0)
         {
-            GameObject go = Instantiate(balloon, new Vector3(Random.Range(-2.20f,2.20f), -6f, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
+            GameObject go = Instantiate(balloon, new Vector3(Random.Range(-7.50f,7.5f), -6f, 0), Quaternion.Euler(0, 0, 0)) as GameObject;
             go.GetComponent<Rigidbody2D>().AddForce(new Vector3(0, Random.Range(multiplier*50f,multiplier*100f), 0));
             timer = produceTime;
         }

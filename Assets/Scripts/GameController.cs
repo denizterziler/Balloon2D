@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public UnityEngine.UI.Text timerText, balloonText;
-    public float timer = 15;
+    public float timer = 20;
     public float delay = 1.5f;
     public float delayTimer = 0;
     public GameObject explosion;
