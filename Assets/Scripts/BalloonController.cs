@@ -14,8 +14,9 @@ public class BalloonController : MonoBehaviour
     private void OnMouseDown()
     {
         GameObject go = Instantiate(explosion, transform.position, transform.rotation) as GameObject;
+        gameControllerScript.scoreController(this.gameObject);
+        gameControllerScript.addBalloon();
         Destroy(this.gameObject);
         Destroy(go, 0.333f);
-        gameControllerScript.addBalloon();
     }
 }

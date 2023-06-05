@@ -5,8 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class TimeOption : MonoBehaviour
 {
-    public void OtherPage(int input)
+    public void OtherPage(int selectedTime)
     {
+        GameController.timer = selectedTime;
+        GameController.goal = selectedTime * 10;
         SceneManager.LoadScene("Game_Scene");
     }
 }
